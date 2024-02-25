@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+        YOUR_HEROKU_APP_NAME: ${{ secrets.YOUR_HEROKU_APP_NAME }}
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
