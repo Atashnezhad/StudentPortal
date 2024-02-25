@@ -31,6 +31,8 @@ jobs:
         curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     - name: Login to Heroku
       run: heroku login -i
+    - name: Check the dir
+      run: pwd
     - name: Add Heroku Git Remote
       run: heroku git:remote -a $YOUR_HEROKU_APP_NAME
       env:
