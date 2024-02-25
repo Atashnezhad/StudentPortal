@@ -33,9 +33,6 @@ jobs:
         curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     - name: Login to Heroku
       run: heroku login -i
-    - name: whoami-horku
-      run: |
-        heroku whoami
     - name: Deploy to Heroku
       run: |
         heroku git:remote -a YOUR_HEROKU_APP_NAME
