@@ -33,8 +33,10 @@ jobs:
       run: heroku login -i
     - name: Check the dir
       run: pwd
-    - name: Add Heroku Git Remote
-      run: heroku git:remote -a $YOUR_HEROKU_APP_NAME
+    - name: Add Heroku Git Remote make a new git repo
+      run: |
+        git init
+        heroku git:remote -a $YOUR_HEROKU_APP_NAME
       env:
         YOUR_HEROKU_APP_NAME: ${{ secrets.YOUR_HEROKU_APP_NAME }}
     - name: Deploy to Heroku
