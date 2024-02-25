@@ -35,5 +35,5 @@ jobs:
       run: heroku login -i
     - name: Deploy to Heroku
       run: |
-        heroku git:remote -a ${{ secrets.YOUR_HEROKU_APP_NAME }}
+        heroku git:remote -a mydotnetapp
         git push heroku master
