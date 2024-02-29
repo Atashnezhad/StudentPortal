@@ -3,7 +3,7 @@ using CsvHelper;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
-namespace StudentPortal.Web
+namespace StudentPortal.Web.Test
 {
     [TestFixture]
     public class TestClass1
