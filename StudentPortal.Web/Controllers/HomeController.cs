@@ -17,6 +17,14 @@ namespace StudentPortal.Web.Controllers
         {
             return View();
         }
+        
+        [HttpPost]
+        [Route("api/helloworld")]
+        public IActionResult HelloWorld()
+        {
+            return Ok("Hello, world!");
+        }
+
 
         public IActionResult Privacy()
         {
